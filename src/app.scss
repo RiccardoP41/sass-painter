@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import "partials/_var.scss";
+@import "partials/_mixins.scss";
+@import "partials/_header.scss";
+@import "partials/_main.scss";
+@import "partials/_footer.scss";
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: $font-family;
+   font-size: $font-size;
+}
+
+// HEADER
+nav {
+    height: 120px;
+    color: white;
+    background-color: black;
+    .nav {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        ul {
+            list-style: none;
+            display: flex;
+        }
+    }
+}
+
+
+
+.nav-top{
+    justify-content: flex-end;
+    ul {
+        margin-right: 100px;
+        li {
+            margin: 0 10px;
+            color: rgb(152,152,152);
+            i{
+                color: rgb(8,156,255);
+            }
+        }
+    }
+}
+
+
+.nav-bot {
+    justify-content: flex-start;
+    ul {
+        margin-left: 10px;
+        li {
+            margin: 0 15px;
+        }
+    }
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    img{
+        height: 25px;
+        width: auto;
+    }
+}
+
+// MAIN
+.main-top {
+    //canc
+    height: 600px;
+    background-color: tomato;
+}
+
+.main-mid {
+    //canc
+    height: 600px;
+    background-color: cyan;
+}
+
+.main-bot {
+    //canc
+    height: 600px;
+    background-color: teal;
+}
+
+.foot-top {
+    //canc
+    height: 300px;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.foot-bot {
+    //canc
+    height: 120px;             //come header
+    background-color: black;    //come header
+    border: 1px solid white;
+}
