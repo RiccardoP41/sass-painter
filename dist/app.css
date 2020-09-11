@@ -7,7 +7,7 @@
 }
 
 nav {
-  height: 120px;
+  height: 110px;
   color: white;
   background-color: black;
 }
@@ -64,8 +64,59 @@ nav .nav ul {
 }
 
 .main-top {
+  background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fwww.painterartist.com%2Fstatic%2Fptr%2Fimages%2Fsocial%2Fpainteressentials7-og.png);
+  background-position: center;
+  background-size: cover;
   height: 600px;
-  background-color: tomato;
+}
+
+.download {
+  padding-top: 40px;
+  color: white;
+}
+
+.download h3 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.download h4 {
+  font-size: 22.5px;
+  margin: 15px 0;
+}
+
+.download ul {
+  margin: 15px 0;
+}
+
+.download ul li {
+  margin: 10px 0;
+}
+
+.download ul li i {
+  color: #989898;
+}
+
+.banner-download {
+  background-color: #666666;
+  width: 200px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-download .trial {
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+.banner-download i {
+  font-size: 22.5px;
+}
+
+.banner-download:hover {
+  background-color: #989898;
 }
 
 .main-mid {
