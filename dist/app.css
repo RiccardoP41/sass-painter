@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 15px;
+  font-weight: lighter;
 }
 
 nav {
@@ -67,12 +68,13 @@ nav .nav ul {
   background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fwww.painterartist.com%2Fstatic%2Fptr%2Fimages%2Fsocial%2Fpainteressentials7-og.png);
   background-position: center;
   background-size: cover;
-  height: 600px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .download {
-  padding-top: 40px;
-  color: white;
+  padding: 40px 0 70px;
 }
 
 .download h3 {
@@ -87,10 +89,15 @@ nav .nav ul {
 
 .download ul {
   margin: 15px 0;
+  list-style: none;
 }
 
 .download ul li {
   margin: 10px 0;
+}
+
+.download ul li span {
+  font-size: 18px;
 }
 
 .download ul li i {
@@ -104,6 +111,7 @@ nav .nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 30px;
 }
 
 .banner-download .trial {
@@ -119,14 +127,124 @@ nav .nav ul {
   background-color: #989898;
 }
 
+.buy {
+  background-color: black;
+  margin: 30px 80px 0;
+  padding-left: 20px;
+}
+
+.buy .buy-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.buy .buy-top .price {
+  padding-top: 40px;
+}
+
+.buy .buy-top .price h3 {
+  font-size: 30px;
+}
+
+.buy .buy-top .price p {
+  color: #989898;
+}
+
+.buy .buy-top img {
+  padding-right: 10px;
+}
+
+.buy .buy-bot {
+  background-color: #e6e6e6;
+  margin-top: 40px;
+  margin-right: 40px;
+  padding: 10px;
+  color: black;
+}
+
+.buy .buy-bot h4 {
+  font-size: 22.5px;
+}
+
+.buy .buy-bot p {
+  color: #333333;
+  margin-top: 4px;
+}
+
+.buy .buy-bot a {
+  color: #00a5f9;
+  text-decoration: none;
+}
+
+.buy-now {
+  background-color: #009cff;
+  color: white;
+  border: none;
+  padding: 7px 40px;
+  margin-top: 30px;
+}
+
+.buy-now:hover {
+  background-color: #32baff;
+}
+
 .main-mid {
-  height: 600px;
-  background-color: cyan;
+  padding: 100px 180px 70px;
+  text-align: center;
+}
+
+.main-mid h2 {
+  font-size: 37.5px;
+}
+
+.main-mid p {
+  font-size: 18px;
+  margin: 20px 0 70px;
+}
+
+.main-mid .img {
+  width: 100%;
+}
+
+.main-mid .img img {
+  width: 100%;
+  height: auto;
 }
 
 .main-bot {
-  height: 600px;
-  background-color: teal;
+  background-color: #222222;
+  color: white;
+  padding: 60px 100px;
+}
+
+.main-bot .paragrafo {
+  display: flex;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.main-bot .paragrafo .descrizione {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.main-bot .paragrafo .descrizione h3 {
+  font-size: 30px;
+}
+
+.main-bot .paragrafo .descrizione p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.main-bot .paragrafo .img {
+  width: 50%;
+}
+
+.main-bot .paragrafo .img img {
+  width: 100%;
+  height: auto;
 }
 
 .foot-top {
