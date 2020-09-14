@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
 }
 
@@ -50,11 +50,36 @@ nav .nav ul {
 }
 
 .nav-bot ul li {
-  margin: 0 15px;
+  padding: 18px;
+  position: relative;
+}
+
+.nav-bot ul li:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-bot ul li:hover .dropdown {
+  display: inline-block;
+}
+
+.nav-bot ul li .dropdown {
+  background-color: white;
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 54px;
+  left: 0px;
+}
+
+.nav-bot ul li .dropdown ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
 }
@@ -64,8 +89,30 @@ nav .nav ul {
   width: auto;
 }
 
+.stick {
+  background-color: #e6e6e6;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.stick ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stick ul li {
+  margin: 0 40px;
+  font-size: 18.2px;
+}
+
 .main-top {
-  background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fwww.painterartist.com%2Fstatic%2Fptr%2Fimages%2Fsocial%2Fpainteressentials7-og.png);
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
   background-position: center;
   background-size: cover;
   color: white;
@@ -78,12 +125,12 @@ nav .nav ul {
 }
 
 .download h3 {
-  font-size: 30px;
+  font-size: 28px;
   margin: 15px 0;
 }
 
 .download h4 {
-  font-size: 22.5px;
+  font-size: 21px;
   margin: 15px 0;
 }
 
@@ -97,7 +144,7 @@ nav .nav ul {
 }
 
 .download ul li span {
-  font-size: 18px;
+  font-size: 16.8px;
 }
 
 .download ul li i {
@@ -120,7 +167,7 @@ nav .nav ul {
 }
 
 .banner-download i {
-  font-size: 22.5px;
+  font-size: 21px;
 }
 
 .banner-download:hover {
@@ -129,7 +176,7 @@ nav .nav ul {
 
 .buy {
   background-color: black;
-  margin: 30px 80px 0;
+  margin: 30px 50px 0;
   padding-left: 20px;
 }
 
@@ -144,7 +191,7 @@ nav .nav ul {
 }
 
 .buy .buy-top .price h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .buy .buy-top .price p {
@@ -164,7 +211,7 @@ nav .nav ul {
 }
 
 .buy .buy-bot h4 {
-  font-size: 22.5px;
+  font-size: 21px;
 }
 
 .buy .buy-bot p {
@@ -195,11 +242,11 @@ nav .nav ul {
 }
 
 .main-mid h2 {
-  font-size: 37.5px;
+  font-size: 35px;
 }
 
 .main-mid p {
-  font-size: 18px;
+  font-size: 16.8px;
   margin: 20px 0 70px;
 }
 
@@ -230,11 +277,11 @@ nav .nav ul {
 }
 
 .main-bot .paragrafo .descrizione h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .main-bot .paragrafo .descrizione p {
-  font-size: 18px;
+  font-size: 16.8px;
   margin-top: 20px;
 }
 
@@ -248,14 +295,86 @@ nav .nav ul {
 }
 
 .foot-top {
-  height: 300px;
-  background-color: grey;
-  border: 1px solid black;
+  background-color: #ececec;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot-top .column {
+  margin: 60px 0;
+}
+
+.foot-top .column h5 {
+  font-size: 16.8px;
+}
+
+.foot-top .column ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.foot-top .column ul li {
+  font-size: 12.6px;
+  padding: 5px;
+}
+
+.foot-top .column .social {
+  margin-top: 30px;
+}
+
+.foot-top .column .social ul {
+  list-style: none;
+  display: flex;
+}
+
+.foot-top .column .social ul li i {
+  font-size: 42px;
+}
+
+.foot-top .column .social ul li .fa-instagram-square {
+  color: #e4405f;
+}
+
+.foot-top .column .social ul li .fa-facebook-square {
+  color: #3b5998;
+}
+
+.foot-top .column .social ul li .fa-twitter-square {
+  color: #1da1f2;
+}
+
+.foot-top .column .social ul li .fa-youtube-square {
+  color: #cd201f;
+}
+
+.foot-top .column .social ul li .fa-pinterest-square {
+  color: #bd081c;
+}
+
+.foot-top .column .social ul li .fa-rss-square {
+  color: #ff8d00;
 }
 
 .foot-bot {
-  height: 120px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
   background-color: black;
-  border: 1px solid white;
+}
+
+.foot-bot ul {
+  list-style: none;
+  display: flex;
+}
+
+.foot-bot ul li {
+  margin: 0 20px;
+}
+
+.foot-bot ul li a {
+  color: #989898;
+  text-decoration: none;
 }
 
