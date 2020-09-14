@@ -1,1 +1,23 @@
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
 
+@mixin absolute($x, $y){
+    position: absolute;
+    top: $x;
+    left: $y;
+}
+
+@mixin sticky($x, $y){
+    position: sticky;
+    top: $x;
+    left: $y;
+}
+
+@mixin imgFit($w, $h){
+    width: $w;
+    height: $h;
+}
